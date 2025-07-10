@@ -50,18 +50,18 @@ body, html {
   width: 100%;
   text-align: center;
   margin: 0; /* Reset default margin */
-  
+
   padding: 10px;
 }
 
-.gallery {
+.page-front .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
   padding: 20px;
 }
 
-.gallery img {
+.gallery .gallery img {
   width: 100%;
   height: auto;
   border-radius: 8px;
@@ -81,7 +81,16 @@ td {
   vertical-align: middle; /* Align content vertically */
 }
 
+/* header for both pages */
 .bios
+{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.motherb-page
 {
     position: fixed;
     top: 0;
