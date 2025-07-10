@@ -4,18 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css"/>
-    <title>Document</title>
+    <title>Build-a-board</title>
 </head>
+
 <body>
-    <div class="flip-container" onclick="this.classList.toggle('flipped')">
-  <div class="flipper">
-    <div class="front">
-      <button>Click to Flip</button>
+    <div class="page-container" onclick="this.classList.toggle('flipped')">
+        <div class="page-flip">
+            <div class="page-front">
+                <section class="gallery">
+                    <img src="Assets/cpu.png" alt="Pic 1" onclick="showDescription('This is picture 1')">
+                    <img src="Assets/RAM.jpg" alt="Pic 2" onclick="showDescription('This is picture 2')">
+                    <img src="Assets/ROM.png" alt="Pic 3" onclick="showDescription('This is picture 3')">
+
+                </section>
+                <div id="modal" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal()">times;</span>
+                        <p id="modal-text"></p>
+                    </div>
+                </div>
+                
+            <h3>Welcome to the Front Page and content goes here</h3>
+            </div>
+            <div class="page-back">
+
+                <section class="bios">
+                    <h2>BIOS Menu</h2>
+                    <p>This is the back-end of your computer Operating System</p>
+                </section>
+
+                <table class="bios-menu">
+                            <tr>
+                                <td>Section 1</td>
+                                <td colspan="2">Full-width Section</td>
+                                <td rowspan="2">Full-width Section</td>
+                            </tr>
+                            <tr>
+                                <td>Section 2</td>
+                                <td colspan="2">Full-width Section</td>
+                                <td rowspan="2">Full-width Section</td>
+
+                            </tr>
+                </table>
+
+            </div>
+        </div>
     </div>
-    <div class="back">
-      <p>Hello from the back side!</p>
-    </div>
-  </div>
-</div>
 </body>
 </html>
