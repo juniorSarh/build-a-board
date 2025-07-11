@@ -31,11 +31,14 @@ body, html {
   justify-content: center;
   align-items: center;
   font-size: 2em;
-  background-image: url(Assets/Motherboard-Area-removebg-preview.png);
-  background-size:cover;
-  background-position: center;
+ 
   
  
+}
+.page-front{
+  height: 100%;
+
+  
 }
 
 .page-back {
@@ -64,21 +67,32 @@ body, html {
     height: 20;
 }
 
-.motherb-page
-{
-    position: fixed;
-    top: 0;
-    width: 100%;
-    text-align: center;
+.motherb-page {
+  background: linear-gradient(120deg, #a36d70, #ee292d);
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+  border-bottom-left-radius: 80px;
+  border-bottom-right-radius: 80px;
+  position: fixed; /* Fixes the header at the top */
+  top: 0;
+  width: 100%; /* Full width */
+  z-index: 1000;
+}
+.motherb-imgs{ /* body for front page */
+  background-image: url(Assets/Motherboard-Area-removebg-preview.png);
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .bios-menu {
   width: 80%;
   border-radius: 50%; 
-  border-collapse: separate;/* Collapses cell borders */
+  border-collapse: separate;
   font-family: Arial, sans-serif;
   margin: 20px 0;
-  height: auto;
+  height: 70%;
   
 }
 
@@ -95,6 +109,7 @@ thead th {
 tbody td {
   padding: 12px 15px;
   border-bottom: 1px solid #ddd;
+  height: inherit;
 }
 
 /* Alternating row colors */
