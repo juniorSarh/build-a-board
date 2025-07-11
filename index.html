@@ -17,13 +17,13 @@
                     <p>This is the back-end of your computer Operating System</p>
                 </section>
 
-
-                <div class="image-container">
+            
+            <!--    <div class="image-container">
                     <img src="Assets/cpu.png" alt="Clickable Image" id="popupImg">
                     <img src="Assets/RAM.png" alt="Clickable Image" id="popupImg">
                     <img src="Assets/ROM.png" alt="Clickable Image" id="popupImg">
                     <img src="Assets/storage.png" alt="Clickable Image" id="popupImg">
-                </div>  
+                </div>  -->
 
                 <div class="popup" id="popupOverlay">
                     <div class="popup-content">
@@ -33,7 +33,7 @@
                     </div>
                 </div>
             </div>
-             <!--This break between front page and back page-->
+            <!--This break between front page and back page-->
 
             <div class="page-back">
 
@@ -43,17 +43,27 @@
                 </section>
 
                 <table class="bios-menu">
+                    <thead>
+                        <tr>
+                        <th>Header 1</th>
+                        <th>Header 2</th>
+                        </tr>
+                    </thead>
+                    <tbody>
                             <tr>
                                 <td>Section 1</td>
-                                <td colspan="2">Full-width Section</td>
-                                <td rowspan="2">Full-width Section</td>
+                                <td colspan="1">
+                                    Full-width Section          :disabled <br>
+                                    Boot sequence               :A,C,SCSI
+                                </td>
+                                
                             </tr>
                             <tr>
-                                <td>Section 2</td>
-                                <td colspan="2">Full-width Section</td>
-                                <td rowspan="2">Full-width Section</td>
-
+                                <td >Section 2</td>
+                                <td colspan="1">Full-width Section</td>
+                                <td rowspan="1">Full-width Section</td>
                             </tr>
+                    </tbody>
                 </table>
 
             </div>

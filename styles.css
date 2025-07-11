@@ -31,8 +31,9 @@ body, html {
   justify-content: center;
   align-items: center;
   font-size: 2em;
-  background-image: url(Assets/mother-b.jpg);
-  background-size: contain;
+  background-image: url(Assets/Motherboard-Area-removebg-preview.png);
+  background-size:cover;
+  
   background-position: center;
   
  
@@ -96,4 +97,36 @@ td {
     top: 0;
     width: 100%;
     text-align: center;
+}
+
+.bios-menu {
+  width: 100%;
+  border-collapse: collapse; /* Collapses cell borders */
+  font-family: Arial, sans-serif;
+  margin: 20px 0;
+}
+
+/* Table headers */
+thead th {
+  background-color: #4CAF50; /* Green background */
+  color: white; /* White text */
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 2px solid #ddd;
+}
+
+/* Table data cells */
+tbody td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Alternating row colors */
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Hover effect for rows */
+tbody tr:hover {
+  background-color: #e0e0e0;
 }
