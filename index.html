@@ -16,13 +16,22 @@
                     <h2>Mother-Board Menu</h2>
                     <p>This is the back-end of your computer Operating System</p>
                 </section>
-                <section class="gallery">
-                    <img src="Assets/cpu.png" alt="Pic 1" onclick="showDescription('This is picture 1')">
-                    <img src="Assets/RAM.png" alt="Pic 2" onclick="showDescription('This is picture 2')">
-                    <img src="Assets/ROM.png" alt="Pic 3" onclick="showDescription('This is picture 3')">
-                     <img src="Assets/storage.png" alt="Pic 4" onclick="showDescription('This is picture 4')">
-                </section>  
-           
+
+
+                <div class="image-container">
+                    <img src="Assets/cpu.png" alt="Clickable Image" id="popupImg">
+                    <img src="Assets/RAM.png" alt="Clickable Image" id="popupImg">
+                    <img src="Assets/ROM.png" alt="Clickable Image" id="popupImg">
+                    <img src="Assets/storage.png" alt="Clickable Image" id="popupImg">
+                </div>  
+
+                <div class="popup" id="popupOverlay">
+                    <div class="popup-content">
+                        <h2>Pop-up Content</h2>
+                        <p>This is the content that appears when you click the image.</p>
+                        <button class="close-btn" id="closeBtn">Close</button>
+                    </div>
+                </div>
             </div>
              <!--This break between front page and back page-->
 
