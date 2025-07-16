@@ -1,84 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Build-a-board</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="page-container" onclick="this.classList.toggle('flipped')">
-        <div class="page-flip">
-            <div class="page-front">
+      <div class="page-flip">
+        <div class="page-front">
+          <header class="motherb-page">
+            <h2>Mother-Board Menu</h2>
+            <p>This is the back-end of your computer Operating System</p>
+          </header>
 
-                <header class="motherb-page">
-                    <h2>Mother-Board Menu</h2>
-                    <p>This is the back-end of your computer Operating System</p>
-                </header>
-                
-                <section  class="motherb-imgs">
-                   <img class="picture" src ="Assets/motherB.jpg"/> 
-                </section>
-                
-                
-            </div>
-            <!--This break between front page and back page-->
-
-            <div class="page-back">
-
-                <section class="bios">
-                    <h2>BIOS Menu</h2>
-                    <p>BIOS FEATURES SETUP</p>
-                    <p>AWARD SOFTWARE,  INC.</p>
-                    
-                </section>
-
-                <table class="bios-menu">
-                    <thead>
-                        <tr>
-                        <th>DESCRIPTION</th>
-                        <th>STATUS</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                            <tr>
-                                <td>
-                                    <P>Virus Warning</P> 
-                                   <P> Boot Sequence</P>
-                                   <P> Swap Floppy Device</P>
-                                   <P> Boot Up Floppy Seek</P>
-                                   <P> Boot Up NumLock Status</P> <br>
-                                   <P> Memory Parity Check</P>
-                                   <P> Security Optioon</P>
-                                   <P> PCI/VGA Palette |Snoop</P>
-                                   <P> OS Select For DRAM > 64MB</P>
-                                </td>
-                                <td>
-                                   <P> :disabled</P> 
-                                   <P> :A,C,SCSI</P>
-                                   <P> :disabled</P>
-                                   <P> :Enabled</P>
-                                   <P> :On </P><br>
-                                   <P> :disabled</P><br>
-                                   <P> :Set-Up</P>
-                                   <P> :disabled</P>
-                                   <P> :Non-OS2</P>
-                                </td>
-                                
-                            </tr>
-                            <tr>
-                                <td >USE [keys up/down] to Move</td>
-                                <td colspan="1">ESC : to Exit </td>
-                                <td rowspan="1">Press ESC or F10 to Save and Continue</td>
-                            </tr>
-                    </tbody>
-                </table>
-
-            </div>
+          <section class="motherb-imgs">
+            <img class="picture" src="Assets/motherB.jpg" />
+          </section>
         </div>
+        <!--This break between front page and back page-->
+
+        <div class="page-back">
+          <section class="bios">
+            <h2>BIOS Menu</h2>
+            <p>BIOS FEATURES SETUP</p>
+            <p>AWARD SOFTWARE, INC.</p>
+          </section>
+
+          <table class="bios-menu">
+            <thead>
+              <tr>
+                <th>DESCRIPTION</th>
+                <th>STATUS</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <p>Virus Warning</p>
+                  <p>Boot Sequence</p>
+                  <p>Swap Floppy Device</p>
+                  <p>Boot Up Floppy Seek</p>
+                  <p>Boot Up NumLock Status</p>
+                  <br />
+                  <p>Memory Parity Check</p>
+                  <p>Security Optioon</p>
+                  <p>PCI/VGA Palette |Snoop</p>
+                  <p>OS Select For DRAM > 64MB</p>
+                </td>
+                <td>
+                  <p>:disabled</p>
+                  <p>:A,C,SCSI</p>
+                  <p>:disabled</p>
+                  <p>:Enabled</p>
+                  <p>:On</p>
+                  <br />
+                  <p>:disabled</p>
+                  <br />
+                  <p>:Set-Up</p>
+                  <p>:disabled</p>
+                  <p>:Non-OS2</p>
+                </td>
+              </tr>
+              <tr>
+                <td>USE [keys up/down] to Move</td>
+                <td>ESC : to Exit</td>
+                <td>Press ESC or F10 to Save and Continue</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
     </div>
-</body>
- 
-<script src="script.js"></script>
+  </body>
+
+  <script src="script.js"></script>
 </html>

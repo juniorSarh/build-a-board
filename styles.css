@@ -1,4 +1,5 @@
-body, html {
+body,
+html {
   margin: 0;
   height: 100%;
   overflow: hidden;
@@ -22,7 +23,8 @@ body, html {
   transform: rotateY(180deg);
 }
 
-.page-front, .page-back {
+.page-front,
+.page-back {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -31,23 +33,17 @@ body, html {
   justify-content: center;
   align-items: center;
   font-size: 2em;
- 
-  
- 
 }
-.page-front{
+.page-front {
   height: 100%;
-
-  
 }
 
 .page-back {
   transform: rotateY(180deg);
   background: linear-gradient(to right, #022464, #022464);
-} 
+}
 
-.page-front h1  
-{
+.page-front h1 {
   position: fixed;
   top: 0;
   width: 100%;
@@ -56,15 +52,13 @@ body, html {
   padding: 10px;
 }
 
-
 /* header for both pages */
-.bios
-{
-    position: fixed;
-    top: 0;
-    width: 100%;
-    text-align: center;
-    height: 20;
+.bios {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  height: 20;
 }
 
 .motherb-page {
@@ -72,44 +66,42 @@ body, html {
   color: white;
   padding: 60px 20px;
   text-align: center;
- /* border-bottom-left-radius: 80px;
+  /* border-bottom-left-radius: 80px;
   border-bottom-right-radius: 80px; */
   position: fixed; /* Fixes the header at the top */
   top: 0;
   width: 100%; /* Full width */
   z-index: 1000;
 }
-.motherb-imgs{ /* body for front page */
-   background: linear-gradient(120deg, #7288a3, #3246b8);
-   width: 100%;
-   height: 100%;
-   text-align:center;
+.motherb-imgs {
+  /* body for front page */
+  background: linear-gradient(120deg, #7288a3, #3246b8);
+  width: 100%;
+  height: 100%;
+  text-align: center;
 }
-.motherb-imgs .picture{
+.motherb-imgs .picture {
   width: 100%;
   height: 71%;
-  position: absolute; 
-  bottom: 0; 
+  position: absolute;
+  bottom: 0;
   left: 10px;
   margin-top: auto;
 }
 
-
-
 .bios-menu {
   width: 80%;
-  border-radius: 50%; 
+  border-radius: 50%;
   border-collapse: separate;
   font-family: Arial, sans-serif;
   margin: 20px 0;
   height: 70%;
-  
 }
 
 /* Table headers */
 thead th {
-  background-color: #83280d; /* Green background */
-  color: white; /* White text */
+  background-color: #83280d;
+  color: white;
   padding: 12px 15px;
   text-align: left;
   border-bottom: 2px solid #ddd;
